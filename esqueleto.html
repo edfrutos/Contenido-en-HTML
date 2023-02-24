@@ -1,31 +1,20 @@
-
-Para comenzar con el diseño de una página web, puedes seguir estos estilos básicos:
-
-Body: Fija el tamaño de fuente, color de fondo y margen de la página completa.
-
-Header: Contiene el logotipo y la información de navegación. Puedes establecer un tamaño de fuente más grande y un color de fondo distinto para destacarlo.
-
-Nav: Establece los estilos de navegación, como tamaño de fuente, alineación y color de fondo.
-
-Main: Contiene el contenido principal de la página, incluyendo imágenes, texto y otros elementos. Establece un tamaño de fuente y color de fondo para este área.
-
-Footer: Contiene información adicional como enlaces de pie de página, derechos de autor y contacto. Puedes establecer un tamaño de fuente más pequeño y un color de fondo distinto para diferenciarlo.
-
-Estos son estilos básicos y puedes personalizarlos según tus necesidades y preferencias.
-
-
-
-
-Eugenio de Frutos
-hazme una demostración incluyendo secciones y div
-Aquí hay un ejemplo de código HTML con secciones y divs para ilustrar cómo se pueden aplicar estilos a una página web:
-
-php
-Copy code
-<html>
-  <head>
-    <style>
-      body {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esqueleto HTML</title>
+  <style>
+    h1 {
+      color: #333;
+    }
+    li {
+      width: 600px;
+      text-align: justify;
+    }
+    body {
+      width: 100%;
         font-size: 16px;
         background-color: #f2f2f2;
         margin: 0;
@@ -34,22 +23,46 @@ Copy code
       header {
         background-color: #333;
         color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      .logo-nav {
+        background-color: #ddd;
+        margin-left: 125px;
+        margin-right: 125px;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 30px;
       }
 
-      nav {
+      .contenido {
         background-color: #ddd;
-        font-size: 14px;
+      }
+      .logo {
+        margin-top: 10px;
+        width: 55px;
+        height: 55px;
+        margin-left: 100px;
+      }
+      nav {
+        color: #333;
+        margin-top: 30px;
+        margin-right: 100px;
+        font-size: 18px; 
         text-align: center;
-        padding: 10px 0;
       }
 
       main {
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        align-content: center;
         background-color: #fff;
         font-size: 18px;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 150px;
       }
 
       footer {
@@ -59,27 +72,52 @@ Copy code
         text-align: center;
         padding: 10px;
       }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div>Logo</div>
-      <nav>
-        <a href="#">Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to my website</h1>
-      <p>Here is some sample content for the main section.</p>
-    </main>
-    <footer>
-      Copyright &copy; 2023 My Website
-    </footer>
-  </body>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="./EDFDiviHome2_logo_small_icon_only.png" alt="Logo EDF Servicios" class="logo">
+      <h1>Diseño básico de una página web</h1>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="contenido"></div>
+  <main>
+    <h2>Bienvenido a mi sitio Web</h2>
+    <p>Aquí hay algunos ejemplos de contenido para la sección principal.</p>
+<ol>
+  <li><strong>Body:</strong> Fija el tamaño de fuente, color de fondo y margen de la página completa.</li><br>
+  <li><strong>Header:</strong> Contiene el logotipo y la información de navegación. Puedes establecer un tamaño de fuente más grande y un color de fondo distinto para destacarlo.</li>
+  <br><li><strong>Nav:</strong> Establece los estilos de navegación, como tamaño de fuente, alineación y color de fondo.</li>
+  <br><li><strong>Main:</strong> Contiene el contenido principal de la página, incluyendo imágenes, texto y otros elementos. Establece un tamaño de fuente y color de fondo para este área.</li>
+  <br><li><strong>Footer:</strong> Contiene información adicional como enlaces de pie de página, derechos de autor y contacto. Puedes establecer un tamaño de fuente más pequeño y un color de fondo distinto para diferenciarlo.</li>
+</ol>
+<p>Estos son estilos básicos y puedes personalizarlos según tus necesidades y preferencias.</p>
+</main>
+  <footer> Copyright &copy; 2023 EDF Soluciones</footer>
+</body>
 </html>
-En este ejemplo, se aplican estilos a los elementos body, header, nav, main y footer mediante CSS. También se utiliza un div para separar los elementos dentro de la cabecera.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

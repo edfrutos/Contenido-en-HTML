@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Cortar Limitar, etc. en HTML</title>
+  <!-- Enalaces version ventana fragmento código PopUP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-markup.min.js"></script>
+
+  <link rel="stylesheet" href="./VentFragCodMulti2.css">
+</head>
+
+<body>
+  <header><h1>
+    Agregar Cortar Limitar, etc. en HTML
+  </h1></header>
+  <ul>
+    <li>
+      <p>Agregar un término en cada sección y página en HTML, puede utilizar la etiqueta de encabezado (&lt;h1&gt;,
+        &lt;h2&gt;, etc.) en el lugar donde desea que aparezca el término. Por ejemplo:</p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-1" class="open-modal">Ver código HTML</button>
+
+      <div id="modal-1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-1" class="language-html">
+		
+      <textarea>
+        <h1>Término de la sección 1</h1>
+        <p>Contenido de la sección 1</p>
+        
+        <h1>Término de la sección 2</h1>
+        <p>Contenido de la sección 2</p>
+        
+        También puede utilizar la etiqueta &lt;title&gt; en la sección &lt;head&gt; para especificar el término de la página en general.
+        
+        <head>
+          <title>Término de la página</title>
+        </head>    
+    </textarea>
+		</code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    </li>
+    <ul>
+      <li>
+        <p>
+          De esta manera, el término de la página se mostrará en la pestaña del navegador y en los resultados de
+          búsqueda.
+        </p>
+      </li>
+    </ul>
+    <li>
+      <p>
+        Para agregar un término en cada sección y página en HTML sin que sea legible para los visitantes, puede utilizar
+        la etiqueta &lt;meta&gt; en la sección &lt;head&gt; de la página. Por ejemplo:
+      </p>
+
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-2" class="open-modal">Ver código HTML</button>
+
+      <div id="modal-2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-2" class="language-html">
+		
+        <textarea name="" id="texto" cols="30" rows="10">
+          <head>
+              <meta name="keywords" content="término1, término2, término3">
+            </head>
+      </textarea>
+		</code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    </li>
+    <ul>
+      <li>
+        <p>
+          La etiqueta meta con el atributo "name" igual a "keywords" es utilizada para especificar palabras clave o
+          términos relacionados con el contenido de la página, estos son utilizados por los motores de búsqueda para
+          indexar y clasificar su contenido. Sin embargo, estos términos no son visibles para los visitantes en la
+          página.
+          Es importante mencionar que los motores de búsqueda no confían en esta etiqueta para clasificar su contenido,
+          ya que es fácilmente manipulable. Es recomendable enfocarse en la optimización del contenido y la estructura
+          del sitio para mejorar la clasificación en los motores de búsqueda.
+        </p>
+      </li>
+    </ul>
+    <li>
+      <p>
+        Para acortar un párrafo en HTML a un número específico de caracteres, puede utilizar la función JavaScript
+        "substring()". Por ejemplo, si desea acortar un párrafo con una ID "miParrafo" a 100 caracteres, puede utilizar
+        el siguiente código:
+      </p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-3" class="open-modal">Ver código HTML</button>
+
+      <div id="modal-3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-3" class="language-html">
+        <textarea name="" id="texto" cols="30" rows="10">
+          <script>
+            var miParrafo = document.getElementById("miParrafo");
+            var textoCompleto = miParrafo.innerHTML;
+            var textoCorto = textoCompleto.substring(0, 100);
+            miParrafo.innerHTML = textoCorto + "...";
+          </script>
+          También puede usar una función similar en Jquery es "slice(start,end)"
+      <script>
+        var miParrafo = $("#miParrafo");
+        var textoCorto = miParrafo.text().slice(0, 100);
+        miParrafo.text(textoCorto + "...");
+      </script>
+      </textarea>
+		</code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <ul>
+        <li>
+          <p>Con esto se estaría mostrando solo los primeros 100 caracteres del párrafo y se añadiría "..." al final
+            para indicar que hay más contenido.
+            Es importante mencionar que esta solución solo funcionaría luego de que el documento HTML haya sido cargado,
+            por lo que es recomendable colocar el código JavaScript al final del documento o dentro de una función de
+            window.onload.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Para acortar una línea en HTML a un número específico de caracteres y agregar un retorno de carro, puedes usar
+        la función JavaScript "substring()" junto con la etiqueta &lt;br&gt; de HTML. Por ejemplo, si deseas acortar una
+        línea con una ID "miLinea" a 50 caracteres y agregar un retorno de carro, puedes utilizar el siguiente código:
+      </p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-4" class="open-modal">Ver código HTML</button>
+
+      <div id="modal-4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-4" class="language-html">
+      <textarea name="" id="" cols="30" rows="10">
+        <script>
+          var miLinea = document.getElementById("miLinea");
+          var textoCompleto = miLinea.innerHTML;
+          var textoCorto = textoCompleto.substring(0, 50);
+          miLinea.innerHTML = textoCorto + "<br>";
+        </script>
+        Con esto se estaría mostrando solo los primeros 50 caracteres de la línea y se agregaría un retorno de carro al final para indicar que hay más contenido.
+        Igualmente, se puede usar Jquery
+        <script>
+          var miLinea = $("#miLinea");
+          var textoCorto = miLinea.text().slice(0, 50);
+          miLinea.html(textoCorto + "<br>");
+        </script>
+    </textarea>
+  </code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <ul>
+        <li>
+          <p>
+            Es importante mencionar que esta solución solo funcionaría luego de que el documento HTML haya sido cargado,
+            por lo que es recomendable colocar el código JavaScript al final del documento o dentro de una función de
+            window.onload.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Para acortar el contenido de un párrafo con una ID específica, dividiendo el texto en líneas de un tamaño
+        específico y agregando un retorno de carro al final de cada línea, puedes usar JavaScript para seleccionar el
+        elemento, obtener su contenido y dividirlo en segmentos de un tamaño determinado. A continuación te muestro un
+        ejemplo para acortar el contenido del párrafo con ID "parrafo" a 100 caracteres por línea:
+      </p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-5" class="open-modal">Ver código HTML</button>
+
+      <div id="modal-5" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-5" class="language-html">
+      <textarea name="" id="" cols="30" rows="10">
+        <script>
+          var parrafo = document.getElementById("parrafo");
+          var textoCompleto = parrafo.innerHTML;
+          var textoCorto = "";
+          var tamañoSegmento = 100;
+          for (var i = 0; i < textoCompleto.length; i += tamañoSegmento) {
+            textoCorto += textoCompleto.substring(i, i + tamañoSegmento) + "<br>";
+          }
+          parrafo.innerHTML = textoCorto;
+          parrafo.style.textAlign = "justify";
+        </script>
+    
+        Con esto se estaría mostrando el texto del párrafo dividido en líneas de 100 caracteres cada una y se agregaría un retorno de carro al final de cada línea.
+        También se puede hacer con Jquery
+    
+        <script>
+          var parrafo = $("#parrafo");
+          var textoCompleto = parrafo.text();
+          var textoCorto = "";
+          var tamañoSegmento = 100;
+          for (var i = 0; i < textoCompleto.length; i += tamañoSegmento) {
+            textoCorto += textoCompleto.slice(i, i + tamañoSegmento) + "<br>";
+          }
+          parrafo.html(textoCorto);
+          parrafo.css("text-align", "justify");
+        </script>
+    </textarea>
+  </code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <ul>
+        <li>
+          <p>Es importante mencionar que esta solución solo funcionaría luego de que el documento HTML haya sido
+            cargado, por lo que es recomendable colocar el código JavaScript dentro de una función que se ejecute una
+            vez que el documento esté listo, como por ejemplo usando el evento "onload" o "jQuery ready".
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        Centrar el contenido de una página HTML, puedes usar el siguiente código CSS:
+      </p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-6" class="open-modal">Ver código CSS</button>
+
+      <div id="modal-6" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-6" class="language-css">
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* esto hace que el contenido ocupe toda la altura de la pantalla */
+      }
+  </code></pre>
+          <button id="copy-button-1" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <ul>
+        <li>
+          <p>
+            La propiedad "display: flex" indica que los elementos dentro del "body" deben ser alineados usando flexbox.
+            La propiedad "align-items: center" indica que los elementos deben ser alineados verticalmente en el centro,
+            mientras que la propiedad "justify-content: center" indica que los elementos deben ser alineados
+            horizontalmente en el centro. La propiedad "min-height: 100vh" hace que el contenido ocupe toda la altura de
+            la pantalla.
+            Recuerda que debes usar el css en un archivo externo o en la etiqueta style dentro de tu head.
+
+          </p>
+        </li>
+      </ul>
+    <li>
+      <p>
+        Para poner los elementos de una lista &lt;li&gt; uno detrás de otro en línea, puedes usar el siguiente código
+        CSS:
+      </p>
+      <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+      <button id="open-modal-7" class="open-modal">Ver código CSS</button>
+
+      <div id="modal-7" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Fragmento de código sin formato</h2>
+          <pre><code id="code-snippet-7" class="language-css">
+      li {
+        display: inline-block; /* esto permite que los elementos se dispongan en línea */
+      }
+  </code></pre>
+          <button id="copy-button-7" class="copy-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+            </svg>
+            Copiar
+          </button>
+        </div>
+      </div>
+      <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <ul>
+        <li>
+          <p>
+            La propiedad "display: inline-block" permite que los elementos se dispongan en línea, como si fueran texto,
+            pero con la capacidad de definir su ancho y alto.
+            Si quieres que los elementos de tu lista tengan un espacio entre ellos, puedes agregar un margen izquierdo a
+            cada elemento:
+          </p>
+          <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+          <button id="open-modal-8" class="open-modal">Ver código CSS</button>
+
+          <div id="modal-8" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Fragmento de código sin formato</h2>
+              <pre><code id="code-snippet-8" class="language-css">
+      li {
+        display: inline-block;
+        margin-left: 10px; /* espacio entre elementos en px */
+      }
+  </code></pre>
+              <button id="copy-button-8" class="copy-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+                </svg>
+                Copiar
+              </button>
+            </div>
+          </div>
+          <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+        </li>
+        <li>
+          <p>
+            Además, si quieres que la lista se alinee de forma horizontal en el centro de tu página, puedes aplicarle un
+            estilo de "text-align: center" al contenedor de la lista:
+          </p>
+        </li>
+
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-9" class="open-modal">Ver código CSS</button>
+
+        <div id="modal-8" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-8" class="language-css">
+      ul {
+        text-align: center;
+      }
+  </code></pre>
+            <button id="copy-button-9" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    </li>
+    </li>
+  </ul>
+  <li>
+    <p>
+      Para acortar un párrafo a un número específico de caracteres, creando nuevas líneas y justificando las líneas
+      sin cortar palabras, puedes utilizar JavaScript o un lenguaje de programación en el lado del servidor para
+      dividir el texto y aplicar el formateo deseado.
+      Aquí te doy un ejemplo de cómo podrías hacerlo utilizando JavaScript:
+    </p>
+    <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda --------------------------------------->
+    <button id="open-modal-10" class="open-modal">Ver código JS</button>
+
+    <div id="modal-10" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Fragmento de código sin formato</h2>
+        <pre><code id="code-snippet-10" class="language-javascript">
+      
+            et paragraph = "Este es un párrafo de ejemplo que será acortado a 100 caracteres. Se asegurará de no cortar palabras y justificar el texto.";
+
+            // Dividir el párrafo en un arreglo de palabras
+            let words = paragraph.split(" ");
+            
+            // Inicializar una variable para almacenar el texto acortado
+            let shortenedText = "";
+            
+            // Inicializar una variable para contar el número de caracteres
+            let characterCount = 0;
+            
+            // Recorrer cada palabra del arreglo
+            for (let i = 0; i < words.length; i++) {
+                // Añadir la palabra al texto acortado
+                shortenedText += words[i] + " ";
+                // Aumentar el contador de caracteres
+                characterCount += words[i].length + 1;
+                if (characterCount >= 100) {
+                    // Si se ha alcanzado el límite de caracteres, agregar un salto de línea y resetear el contador
+                    shortenedText += "\n";
+                    characterCount = 0;
+                }
+            }
+            console.log(shortenedText);
+    
+  </code></pre>
+        <button id="copy-button-10" class="copy-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+          </svg>
+          Copiar
+        </button>
+      </div>
+    </div>
+    <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    <ul>
+      <li>
+        <p>
+          Para acortar el párrafo con id "parrafo" a un número específico de caracteres, creando nuevas líneas y
+          justificando las líneas sin cortar palabras, puedes utilizar JavaScript para obtener el elemento y dividir
+          el texto en un arreglo de palabras. Entonces, recorres cada palabra y añades al texto acortado, si se
+          alcanza el límite de caracteres, agrega un salto de línea y resetea el contador.
+          Aquí te doy un ejemplo de cómo podrías hacerlo utilizando JavaScript:
+        </p>
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-11" class="open-modal">Ver código JS</button>
+
+        <div id="modal-11" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-11" class="language-javascript">
+            // Obtener el elemento con el id "parrafo"
+            let paragraph = document.getElementById("parrafo");
+            
+            // Obtener el texto del párrafo
+            let text = paragraph.innerText;
+            
+            // Dividir el texto en un arreglo de palabras
+            let words = text.split(" ");
+            
+            // Inicializar una variable para almacenar el texto acortado
+            let shortenedText = "";
+            
+            // Inicializar una variable para contar el número de caracteres
+            let characterCount = 0;
+            
+            // Recorrer cada palabra del arreglo
+            for (let i = 0; i < words.length; i++) {
+                // Añadir la palabra al texto acortado
+                shortenedText += words[i] + " ";
+                // Aumentar el contador de caracteres
+                characterCount += words[i].length + 1;
+                if (characterCount >= 100) {
+                    // Si se ha alcanzado el límite de caracteres, agregar un salto de línea y resetear el contador
+                    shortenedText += "\n";
+                    characterCount = 0;
+                }
+            }
+            // Establecer el texto acortado en el elemento "parrafo"
+            paragraph.innerText = shortenedText;
+            
+            Para justificar el texto, añade la propiedad "text-align: justify" en tu css al parrafo en cuestión
+            
+            #parrafo{
+               text-align: justify;
+            }
+    
+  </code></pre>
+            <button id="copy-button-11" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+        <p>
+          Ten en cuenta que en esta solución no se está considerando la posibilidad de que una palabra sea más grande
+          que el número de caracteres permitido, en este caso debes considerar otras alternativas.
+        </p>
+      </li>
+    </ul>
+  <li>
+    <p>
+      Para reducir el párrafo con id="parrafo" a un número específico de caracteres, continuando en la siguiente línea
+      y justificando las líneas hasta acabar el texto del párrafo, puedes utilizar JavaScript para obtener el elemento
+      y dividir el texto en un arreglo de palabras. Entonces, recorres cada palabra y añades al texto reducido, si se
+      alcanza el límite de caracteres, agrega un salto de línea y resetea el contador.
+      Aquí te doy un ejemplo de cómo podrías hacerlo utilizando JavaScript:
+    </p>
+    <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+    <button id="open-modal-11" class="open-modal">Ver código JS</button>
+
+    <div id="modal-11" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Fragmento de código sin formato</h2>
+        <pre><code id="code-snippet-11" class="language-javascript">
+                            // Obtener el elemento con el id "parrafo"
+                            let paragraph = document.getElementById("parrafo");
+                            
+                            // Obtener el texto del párrafo
+                            let text = paragraph.innerText;
+                            
+                            // Dividir el texto en un arreglo de palabras
+                            let words = text.split(" ");
+                            
+                            // Inicializar una variable para almacenar el texto reducido
+                            let shortenedText = "";
+                            
+                            // Inicializar una variable para contar el número de caracteres
+                            let characterCount = 0;
+                            
+                            // Recorrer cada palabra del arreglo
+                            for (let i = 0; i < words.length; i++) {
+                                // Añadir la palabra al texto reducido
+                                shortenedText += words[i] + " ";
+                                // Aumentar el contador de caracteres
+                                characterCount += words[i].length + 1;
+                                if (characterCount >= 100) {
+                                    // Si se ha alcanzado el límite de caracteres, agregar un salto de línea y resetear el contador
+                                    shortenedText += "\n";
+                                    characterCount = 0;
+                                }
+                            }
+                            // Establecer el texto reducido en el elemento "parrafo"
+                            paragraph.innerText = shortenedText;
+                          
+                            Para justificar el texto, añade la propiedad "text-align: justify" en tu css al parrafo en cuestión
+                         
+                            #parrafo{
+                               text-align: justify;
+                            }
+                        
+                    
+                  </code></pre>
+        <button id="copy-button-11" class="copy-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+          </svg>
+          Copiar
+        </button>
+      </div>
+    </div>
+    <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    <p>
+      El código anterior divide el párrafo en un arreglo de palabras, luego recorre cada palabra y va añadiéndola al
+      texto acortado. Si se alcanza el límite de caracteres, agrega un salto de línea y resetea el contador.
+    </p>
+  </li>
+  <li>
+    <p>
+      Para justificar las líneas de una lista con un máximo de caracteres por línea sin romper palabras, se puede
+      utilizar el siguiente código CSS:
+    </p>
+    <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+    <button id="open-modal-12" class="open-modal">Ver código JS</button>
+
+    <div id="modal-12" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Fragmento de código sin formato</h2>
+        <pre><code id="code-snippet-12" class="language-css">
+                                  li {
+                                    text-align: justify; /*justificar el texto*/
+                                    hyphens: auto; /*activar el corte de palabras*/
+                                    word-wrap: break-word; /*romper las palabras para ajustarlas al ancho*/
+                                    max-width: 100px; /*definir un ancho máximo para cada línea*/
+                                 }
+                        </code></pre>
+        <button id="copy-button-12" class="copy-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+          </svg>
+          Copiar
+        </button>
+      </div>
+    </div>
+    <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    <ul>
+      <li>
+        <p>Nota: El ancho máximo de cada línea se define en <code>max-width</code>. Puede cambiar el valor 100px a
+          cualquier número de caracteres que desee.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      Para fijar el tipo de fuente y el tamaño del texto de un párrafo con id "parrafo", se puede utilizar el
+      siguiente código CSS:
+    </p>
+    <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+    <button id="open-modal-13" class="open-modal">Ver código JS</button>
+
+    <div id="modal-13" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Fragmento de código sin formato</h2>
+        <pre><code id="code-snippet-13" class="language-css">
+            #parrafo {
+              font-family: Arial, sans-serif; /*establecer el tipo de fuente*/
+              font-size: 14px; /*establecer el tamaño de la fuente*/
+            }
+  </code></pre>
+        <button id="copy-button-13" class="copy-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+          </svg>
+          Copiar
+        </button>
+      </div>
+    </div>
+    <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+    <ul>
+      <li>
+        <p>
+          Nota: Puede cambiar "Arial, sans-serif" por el nombre de la fuente que desee utilizar, y 14px por el tamaño
+          de fuente que desee. También puede utilizar otras unidades de medida, como por ejemplo: em, rem, %.
+
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      Para darle al texto de un párrafo con id "parrafo" un estilo negrita, se puede utilizar el siguiente código CSS:
+    </p>
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-14" class="open-modal">Ver código JS</button>
+
+        <div id="modal-14" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-14" class="language-css">
+              #parrafo {
+                font-weight: bold; /*establecer el estilo negrita*/
+              }
+      </code></pre>
+            <button id="copy-button-14" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      <li>
+        <p>
+          También se puede utilizar la propiedad <code>font-weight</code> en el elemento <code>&lt;p&gt;</code>
+          directamente en HTML, agregando la propiedad <code>style</code> de la siguiente manera:
+        </p>
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-15" class="open-modal">Ver código HTML</button>
+
+        <div id="modal-15" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-15" class="language-html">
+              <textarea name="" id="" cols="30" rows="10">
+                <p id="parrafo" style="font-weight:bold"> Texto del parrafo </p>
+                Además, si quieres darle bold solo a algunas palabras dentro del párrafo, puedes usar la etiqueta <code>&lt;strong&gt;</code> o <code>&lt;b&gt;</code> para rodear el texto que deseas en negrita.
+                <p id="parrafo">Texto del parrafo <strong>palabra en negrita</strong> texto normal</p>
+            </textarea>
+      </code></pre>
+            <button id="copy-button-15" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+
+        <li>
+        <p>
+          Para centrar el contenido del cuerpo (body) de una página HTML, se puede utilizar el siguiente código CSS:
+        </p>
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-16" class="open-modal">Ver código CSS</button>
+
+        <div id="modal-16" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-16" class="language-css">
+              body {
+                display: flex; /*establecer el display flex para el body*/
+                align-items: center; /*centrar el contenido verticalmente*/
+                justify-content: center; /*centrar el contenido horizontalmente*/
+                margin: 0 auto; /*centrar el contenido horizontalmente*/
+                text-align:center; /*centrar el contenido horizontalmente*/
+                max-width: 1200px; /* establecer un ancho máximo de 1200px */
+                margin: 0 auto; /* centrar el contenido horizontalmente */
+              }
+      </code></pre>
+            <button id="copy-button-16" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+       <p>
+          También puedes establecer el ancho máximo para un elemento específico utilizando su ID o clase:
+        </p>
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-17" class="open-modal">Ver código HTML</button>
+
+        <div id="modal-17" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-17" class="language-html">
+              <textarea name="" id="" cols="30" rows="10">
+                <div id="contenido">Contenido de la página</div>
+            </textarea>
+      </code></pre>
+            <button id="copy-button-17" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+        <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" , "code-snippet-nº" ,"copy-button-nº" por el que corresponda --------------------------------------->
+        <button id="open-modal-18" class="open-modal">Ver código CSS</button>
+
+        <div id="modal-18" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fragmento de código sin formato</h2>
+            <pre><code id="code-snippet-18" class="language-CSS">
+              #contenido {
+                max-width: 1200px; /* establecer un ancho máximo de 1200px */
+                margin: 0 auto; /* centrar el contenido horizontalmente */
+              }
+      </code></pre>
+            <button id="copy-button-18" class="copy-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+              </svg>
+              Copiar
+            </button>
+          </div>
+        </div>
+        <!------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
+      </li>
+  </li>
+  </ul>
+  </li>
+
+  </li>
+  </ul>
+  <!-- Enalaces version ventana fragmento código PopUP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="./VentFragCodMulti2.js"></script>
+</body>
+
+</html>
+<!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda ---------------------------------------
+<button id="open-modal-1" class="open-modal">Ver código 1</button>
+
+	<div id="modal-1" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Fragmento de código sin formato</h2>
+			<pre><code id="code-snippet-1" class="language-css">
+			/* Estilos para la ventana modal */
+.modal {
+	display: none; /* Ocultar la ventana modal por defecto */
+	position: fixed; /* Posicionamiento fijo para que se muestre por encima del contenido */
+	z-index: 1; /* Asignar un valor de índice Z alto para que se muestre por encima de otros elementos */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%!important;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4); /* Fondo oscuro para resaltar la ventana modal */
+}
+			
+		</code></pre>
+			<button id="copy-button-1" class="copy-button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M18 2h-5c-1.1 0-2 .9-2 2v1H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0v2H6v12h8V5h-3V3zm5 16H6V7h10v12z" />
+				</svg>
+				Copiar
+			</button>
+		</div>
+	</div>
+	------------------------ Final de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº" y "code-snippet-nº" por el que corresponda -->
